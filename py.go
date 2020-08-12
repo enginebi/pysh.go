@@ -165,7 +165,7 @@ func execute(executer, c, args string) ([]byte, error) {
 	if cmd.Dir == "" {
 		cmd.Dir = PyHome
 	}
-	// log.Infof("PYTHONPATH final: %s", cmd.Dir)
+	log.Infof("PYTHONPATH final: %s PyHome:%s", cmd.Dir, PyHome)
 	return cmd.CombinedOutput()
 }
 
